@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="eIp96-2a99wfzOu8j3j4jj-_AxCA-pzaRjmGguC9khY" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team & Management | Nirmal Enterprises | Earthmoving Services Navi Mumbai</title>
+    <meta name="description" content="Meet the experienced leadership team and management of Nirmal Enterprises. Professional earthmoving and transport services in Navi Mumbai.">
+    
+    <!-- Link to Global CSS -->
+    <link rel="stylesheet" href="nav.css">
+    
+    <style>
+        /* Page-specific styles */
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: var(--light-gray);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Breadcrumb Section */
+        .breadcrumb-section {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: var(--white);
+            padding: var(--space-lg) 0;
+            text-align: center;
+        }
+
+        .breadcrumb {
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--space-sm);
+        }
+
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--white);
+        }
+
+        .breadcrumb-title {
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            margin: 0;
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--space-2xl) var(--space-md);
+        }
+
+        /* Main Owner Section */
+        .main-owner-section {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-lg);
+            padding: var(--space-2xl);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .main-owner-content {
+            display: grid;
+            grid-template-columns: 300px 1fr 250px;
+            gap: var(--space-xl);
+            align-items: start;
+        }
+
+        .main-owner-photo {
+            width: 300px;
+            height: 350px;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .main-owner-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .main-owner-info h2 {
+            font-size: var(--font-size-2xl);
+            color: var(--primary-blue);
+            margin-bottom: var(--space-md);
+            font-weight: 700;
+        }
+
+        .main-owner-info p {
+            margin-bottom: var(--space-sm);
+            line-height: 1.7;
+            color: var(--medium-gray);
+        }
+
+        .main-owner-info ul {
+            list-style: none;
+            padding: 0;
+            margin: var(--space-md) 0;
+        }
+
+        .main-owner-info li {
+            margin-bottom: var(--space-xs);
+            padding-left: var(--space-md);
+            position: relative;
+        }
+
+        .main-owner-info li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-orange);
+            font-weight: bold;
+        }
+
+        /* Management Table */
+        .management-section {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: var(--space-md);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .management-title {
+            background: var(--dark-blue);
+            color: var(--white);
+            padding: var(--space-sm);
+            margin: -var(--space-md) -var(--space-md) var(--space-md);
+            border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+            font-weight: 700;
+            text-align: center;
+            font-size: var(--font-size-lg);
+        }
+
+        .management-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .management-item {
+            padding: var(--space-sm) var(--space-md);
+            margin-bottom: var(--space-xs);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all var(--transition-base);
+            border-left: 4px solid transparent;
+        }
+
+        .management-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(5px);
+            border-left-color: var(--accent-orange);
+        }
+
+        .management-item:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Team Members Section */
+        .team-section {
+            margin-top: var(--space-2xl);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: var(--font-size-2xl);
+            color: var(--primary-blue);
+            margin-bottom: var(--space-2xl);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-orange), var(--accent-orange-hover));
+            border-radius: 2px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-xl);
+            margin-top: var(--space-xl);
+        }
+
+        /* Team Member Cards */
+        .team-member {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-md);
+            padding: var(--space-xl);
+            text-align: center;
+            transition: all var(--transition-base);
+        }
+
+        .team-member:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .member-photo {
+            width: 130px;
+            height: 160px;
+            border-radius: var(--border-radius-lg);
+            margin: 0 auto var(--space-md);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        .member-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .member-name {
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: var(--space-xs);
+        }
+
+        .member-role {
+            font-size: var(--font-size-lg);
+            color: var(--accent-orange);
+            font-weight: 600;
+            margin-bottom: var(--space-md);
+        }
+
+        .member-description {
+            color: var(--medium-gray);
+            line-height: 1.6;
+            font-size: var(--font-size-sm);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-owner-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: var(--space-lg);
+            }
+
+            .main-owner-photo {
+                width: 250px;
+                height: 300px;
+                margin: 0 auto;
+            }
+
+            .management-section {
+                margin-top: var(--space-lg);
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-content {
+                padding: var(--space-lg) var(--space-sm);
+            }
+
+            .main-owner-section {
+                padding: var(--space-lg);
+            }
+
+            .breadcrumb-title {
+                font-size: var(--font-size-2xl);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <div id="navbar"></div>
+
+    <!-- Breadcrumb Section -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> > <a href="#">Teams</a> > Our Leadership
+            </div>
+            <h1 class="breadcrumb-title">Meet Our Leadership Team</h1>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Main Owner Section -->
+        <div class="main-owner-section" id="owner">
+            <div class="main-owner-content">
+                <div class="main-owner-photo">
+                    <img src="./Images/on.jpg" alt="Main Owner Photo">
+                </div>
+                <div class="main-owner-info">
+                    <h2>Mr. Pavitra Jana Paringe</h2>
+                    <h3>Owner of Nirmal Enterprises</h3>
+                    <p><strong>Intend to build a Business with leading Infraprojects Companies environment with committed & dedicated people,
+                         which will help me to explore myself fully and realize my potential.
+                         Willing to work as key player in challenging & Creative environment.</strong></p>
+                    
+                    <ul>
+                        <li>MBA Degree Holder in E-Business </li>
+                        <li>Microsoft Certified Professional</li>
+                        <li>Strong Leadership and Team Management Skills</li>
+                        <li>10+ Years of Experience in Project Management</li>
+                        <li>Expertise in Earthmoving and Infrastructure Development</li>
+                    </ul>
+                    
+                    <p>Always ready to complete any project with the hard work and efficiency.</p>
+                </div>
+                <div class="management-section">
+                    <div class="management-title">The Management</div>
+                    <ul class="management-list">
+                        <li class="management-item" onclick="scrollToMember('member1')">Mrs. PriyaDarshani Pavitra Paringe</li>
+                        <!-- <li class="management-item" onclick="scrollToMember('member2')">Mr. [Manager Name 2]</li>
+                        <li class="management-item" onclick="scrollToMember('member3')">Mr. [Manager Name 3]</li>
+                        <li class="management-item" onclick="scrollToMember('member4')">Mr. Pavitra Jana Paringe</li> -->
+                        <li class="management-item" onclick="scrollToMember('owner')">Mr. Pavitra Jana Paringe</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <div class="team-section">
+            <h3 class="section-title">Our Management Team</h3>
+            
+            <div class="team-grid">
+              
+                <div class="team-member" id="member1">
+                    <div class="member-photo">
+                        <img src="./Images/on2.1.jpg" alt="Manager 1 Photo">
+                    </div>
+                    <div class="member-name">Mrs. Priyadarshani Pavitra Paringe</div>
+                    <div class="member-role">Co. Owner</div>
+                    <div class="member-description">
+                      B.Sc. Degree Holder In Bio-Technology.<br>
+                      Core Knowledge of Infra Related Work. Expert in Handling Accounts. 8+ Years of Experience in Administration.
+                    </div>
+                </div>
+
+              <!--
+                <div class="team-member" id="member2">
+                    <div class="member-photo">
+                        <img src="URL_TO_MEMBER2_IMAGE" alt="Manager 2 Photo">
+                    </div>
+                    <div class="member-name">Mr. [Manager Name 2]</div>
+                    <div class="member-role">Technical Manager</div>
+                    <div class="member-description">
+                        Your paragraph here describing this manager's role, experience, and responsibilities in the company.
+                    </div>
+                </div>
+
+                
+                <div class="team-member" id="member3">
+                    <div class="member-photo">
+                        <img src="URL_TO_MEMBER3_IMAGE" alt="Manager 3 Photo">
+                    </div>
+                    <div class="member-name">Mr. [Manager Name 3]</div>
+                    <div class="member-role">Business Development Manager</div>
+                    <div class="member-description">
+                        Your paragraph here describing this manager's role, experience, and responsibilities in the company.
+                    </div>
+                </div>
+
+                
+                <div class="team-member" id="member4">
+                    <div class="member-photo">
+                        <img src="URL_TO_MEMBER4_IMAGE" alt="Manager 4 Photo">
+                    </div>
+                    <div class="member-name">Mrs. [Manager Name 4]</div>
+                    <div class="member-role">Administration Manager</div>
+                    <div class="member-description">
+                        Your paragraph here describing this manager's role, experience, and responsibilities in the company.
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+ <div id="footer"></div>
+
+ <script src="script.js"></script>
+  <script>
+        loadComponent("navbar", "navbar.html");
+        loadComponent("footer", "footer.html");
+  </script>
+
+    <script>
+        // Mobile navigation toggle
+        function toggleMobileMenu() {
+            const nav = document.getElementById('main-nav');
+            const toggleIcon = document.getElementById('nav-toggle-icon');
+            
+            nav.classList.toggle('active');
+            toggleIcon.textContent = nav.classList.contains('active') ? '✕' : '☰';
+        }
+
+        // Smooth scroll to team member
+        function scrollToMember(memberId) {
+            const element = document.getElementById(memberId);
+            const headerHeight = document.querySelector('.header').offsetHeight;
+            const targetPosition = element.offsetTop - headerHeight - 20;
+            
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+            
+            // Add highlight effect
+            element.style.transform = 'scale(1.02)';
+            element.style.boxShadow = '0 15px 35px rgba(37, 99, 235, 0.2)';
+            
+            setTimeout(() => {
+                element.style.transform = 'translateY(-8px)';
+                element.style.boxShadow = 'var(--shadow-lg)';
+            }, 1000);
+        }
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('main-nav').classList.remove('active');
+                document.getElementById('nav-toggle-icon').textContent = '☰';
+            });
+        });
+    </script>
+</body>
+</html>

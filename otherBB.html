@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="eIp96-2a99wfzOu8j3j4jj-_AxCA-pzaRjmGguC9khY" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavitra's Tech Solutions | Electronics & Software Services | Navi Mumbai</title>
+    <meta name="description" content="Pavitra's Tech Solutions - Professional electronics repair, software development, and IT services in Navi Mumbai. Part of Nirmal Enterprises group.">
+    
+    <link rel="stylesheet" href="nav.css">
+
+    <style>
+        :root {
+            /* Brand Colors */
+            --primary-blue: #2563eb;
+            --secondary-blue: #1d4ed8;
+            --dark-blue: #1e3a8a;
+            --tech-purple: #7c3aed;
+            --tech-purple-hover: #6d28d9;
+            --accent-orange: #ff8c42;
+            --accent-orange-hover: #e67e22;
+            --success-green: #10b981;
+            
+            /* Neutral Colors */
+            --white: #ffffff;
+            --light-gray: #f8fafc;
+            --medium-gray: #64748b;
+            --dark-gray: #1e293b;
+            --border-gray: #e2e8f0;
+            
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --space-2xl: 4rem;
+            
+            /* Typography */
+            --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            --font-size-xs: 0.75rem;
+            --font-size-sm: 0.875rem;
+            --font-size-base: 1rem;
+            --font-size-lg: 1.125rem;
+            --font-size-xl: 1.25rem;
+            --font-size-2xl: 1.5rem;
+            --font-size-3xl: 2rem;
+            --font-size-4xl: 2.5rem;
+            --font-size-5xl: 3rem;
+            
+            /* Design System */
+            --border-radius: 0.5rem;
+            --border-radius-lg: 1rem;
+            --border-radius-full: 9999px;
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            
+            /* Transitions */
+            --transition-fast: 0.15s ease;
+            --transition-base: 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: var(--light-gray);
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--tech-purple) 100%);
+            color: var(--white);
+            padding: var(--space-2xl) 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 2px, transparent 2px),
+                radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.1) 2px, transparent 2px);
+            background-size: 100px 100px;
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        .company-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: var(--space-xs) var(--space-md);
+            border-radius: var(--border-radius-full);
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--space-md);
+            display: inline-block;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero h1 {
+            font-size: var(--font-size-4xl);
+            font-weight: 800;
+            margin-bottom: var(--space-sm);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-tagline {
+            font-size: var(--font-size-xl);
+            margin-bottom: var(--space-lg);
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        .hero-description {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--space-xl);
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: var(--space-md);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-md) var(--space-xl);
+            border: 2px solid transparent;
+            border-radius: var(--border-radius-lg);
+            font-size: var(--font-size-lg);
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            min-height: 50px;
+            gap: var(--space-xs);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-orange), var(--accent-orange-hover));
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 140, 66, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--white);
+            border-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--primary-blue);
+            transform: translateY(-3px);
+        }
+
+        .btn-call {
+            background: linear-gradient(135deg, var(--success-green), #059669);
+            color: var(--white);
+        }
+
+        .btn-call:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        .content-section {
+            padding: var(--space-2xl) 0;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-xl);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: var(--space-xl);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            transition: all var(--transition-base);
+            border-top: 4px solid var(--tech-purple);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--tech-purple), var(--tech-purple-hover));
+            border-radius: var(--border-radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-3xl);
+            color: var(--white);
+            margin: 0 auto var(--space-md);
+        }
+
+        .service-card h3 {
+            color: var(--primary-blue);
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+        }
+
+        .service-card p {
+            color: var(--medium-gray);
+            line-height: 1.7;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-2xl);
+            align-items: center;
+            margin-bottom: var(--space-2xl);
+        }
+
+        .about-content h2 {
+            font-size: var(--font-size-3xl);
+            color: var(--primary-blue);
+            margin-bottom: var(--space-md);
+            font-weight: 700;
+        }
+
+        .about-content p {
+            color: var(--medium-gray);
+            margin-bottom: var(--space-md);
+            line-height: 1.8;
+        }
+
+        .features-list {
+            list-style: none;
+            margin: var(--space-md) 0;
+        }
+
+        .features-list li {
+            padding: var(--space-xs) 0;
+            padding-left: var(--space-lg);
+            position: relative;
+            color: var(--dark-gray);
+        }
+
+        .features-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success-green);
+            font-weight: bold;
+            font-size: var(--font-size-lg);
+        }
+
+        .about-image {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(124, 58, 237, 0.1));
+            border-radius: var(--border-radius-lg);
+            padding: var(--space-xs);
+            text-align: center;
+            border: 1px dashed var(--tech-purple);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .placeholder-text {
+            color: var(--tech-purple);
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--white);
+            padding: var(--space-2xl);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-xl);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-2xl);
+        }
+
+        .contact-info h3 {
+            color: var(--primary-blue);
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+            margin-bottom: var(--space-lg);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            margin-bottom: var(--space-md);
+            padding: var(--space-md);
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(124, 58, 237, 0.05));
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--tech-purple);
+        }
+
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--tech-purple), var(--tech-purple-hover));
+            border-radius: var(--border-radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-lg);
+            color: var(--white);
+            flex-shrink: 0;
+        }
+
+        .info-text strong {
+            color: var(--primary-blue);
+            font-weight: 600;
+        }
+
+        /* Contact Form */
+        .contact-form h3 {
+            color: var(--primary-blue);
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+            margin-bottom: var(--space-lg);
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: var(--space-md);
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: var(--space-xs);
+            font-weight: 600;
+            color: var(--dark-gray);
+            font-size: var(--font-size-sm);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: var(--space-md);
+            border: 2px solid var(--border-gray);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size-base);
+            transition: all var(--transition-base);
+            background-color: var(--white);
+            font-family: inherit;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--tech-purple);
+            box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.75rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            padding-right: 2.5rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, var(--tech-purple), var(--tech-purple-hover));
+            color: var(--white);
+            border: none;
+            padding: var(--space-md);
+            font-size: var(--font-size-lg);
+            font-weight: 700;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all var(--transition-base);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
+        }
+
+        /* Quick Action Buttons */
+        .quick-actions {
+            display: flex;
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+            justify-content: center;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: var(--space-xl);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--tech-purple), var(--tech-purple-hover));
+            border-radius: 2px;
+        }
+
+        /* Form Validation */
+        .form-error {
+            border-color: #ef4444 !important;
+            box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1) !important;
+        }
+
+        .success-message {
+            background: linear-gradient(135deg, var(--success-green), #059669);
+            color: var(--white);
+            padding: var(--space-sm);
+            border-radius: var(--border-radius);
+            margin-bottom: var(--space-md);
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: var(--font-size-3xl);
+            }
+
+            .hero-tagline {
+                font-size: var(--font-size-lg);
+            }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-lg);
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .quick-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .quick-actions .btn {
+                max-width: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: var(--space-xl) 0;
+            }
+
+            .content-section {
+                padding: var(--space-lg) 0;
+            }
+
+            .contact-section {
+                padding: var(--space-lg);
+            }
+
+            .section-title {
+                font-size: var(--font-size-2xl);
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeInUp 0.8s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar (using global CSS) -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <img src="../Images/Ptl.png" alt="Pavitra's Tech Solutions Logo" class="logo-image">
+                        </div>
+                        <h1>PAVITRA'S TECH SOLUTIONS</h1>
+                    </div>
+                </div>
+                <button class="nav-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu">
+                    <span id="nav-toggle-icon">☰</span>
+                </button>
+                <nav class="main-nav" id="main-nav" role="navigation">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="https://www.instagram.com/pavitraparinge?igsh=MWZuOGV4bnAyYZB0MA%3D%3D" class="nav-link" target="_blank">Instagram</a>
+                    <!-- <a href="services.html" class="nav-link">Services</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a> -->
+                    <a href="owners.html" class="nav-link">Owners</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section class="hero" id="landing">
+        <div class="container">
+            <div class="hero-content animate-fade-in">
+                <div class="company-badge">Other Business under Nirmal Enterprises</div>
+                <h1>Pavitra's Tech Solutions</h1>
+                <p class="hero-tagline">For All Your Computer Hardware and Software Related Needs</p>
+                <p class="hero-description">Professional Computer Hardware repair, software development, IT support, and digital solutions. Your trusted technology partner in Navi Mumbai.</p>
+                <div class="cta-buttons">
+                    <a href="#contact-form" class="btn btn-primary">Get Consultation Now</a>
+                    <a href="tel:+919870012090" class="btn btn-call">📞 Call Now</a>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="content-section" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Technology Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Computer Hardware Support</h3>
+                    <p>Professional repair services for smartphones, laptops, and other Computer devices. Quick diagnosis and reliable solutions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Software Development</h3>
+                    <p>Custom software solutions, web applications, and development tailored to your business needs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h3>IT Support & Maintenance</h3>
+                    <p>Comprehensive IT support, system maintenance, network setup, and troubleshooting services for businesses.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3>Data Recovery & Security</h3>
+                    <p>Data recovery services, and cybersecurity solutions to protect your valuable information.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Digital Solutions</h3>
+                    <p>Website development, digital marketing posters, and e-commerce solutions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Smart Home Setup</h3>
+                    <p>Smart home automation, IoT device installation, and integration of modern technology solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>About Pavitra's Tech Solutions</h2>
+                    <p>As part of the trusted Nirmal Enterprises group, we bring the same commitment to quality and customer satisfaction to the technology sector. Our experience provides comprehensive Computer Hardware and software solutions.</p>
+                    <p><strong>Pavitra's Tech Solutions </strong> is newly founded startup by <strong>Pavitra Jana Paringe</strong>, Our mission is To provide Value to Customer, and On time service within Competitive pricing. We pride ourselves on delivering cutting-edge technology solutions with personalized service.</p>
+                    <ul class="features-list">
+                        <li>Quick turnaround time on repairs</li>
+                        <li>Competitive pricing with quality assurance</li>
+                        <li>Always emergency support available</li>
+                        <li>Latest tools and technology</li>
+                        <li>Customer satisfaction guarantee</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                   <img src="./Images/PTimg.jpg" alt="Pavitra's Tech Solutions">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="content-section" id="contact-form">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-section">
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div class="info-text">
+                                <strong>Address:</strong><br>
+                                871/B, At-Jawale Post-Vahal Tal-Panvel <br>
+                                Dist-Raigad Pin-410206 Navi Mumbai
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div class="info-text">
+                                <strong>Phone:</strong><br>
+                                +91 98700 12090
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">✉️</div>
+                            <div class="info-text">
+                                <strong>Email:</strong><br>
+                                nirmalenterprises@gmail.com
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">⏰</div>
+                            <div class="info-text">
+                                <strong>Working Hours:</strong><br>
+                                Mon-Sat: 9:00 AM - 7:00 PM<br>
+                                Sunday: Emergency Services
+                            </div>
+                        </div>
+                        <div class="quick-actions">
+                            <a href="tel:+919870012090" class="btn btn-call">📞 Call Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <form id="techContactForm">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="e.g., +91 98765 43210" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service" class="form-label">Service Needed *</label>
+                                <select id="service" name="service" class="form-input form-select" required>
+                                    <option value="">Select a service</option>
+                                    <option value="Electronics Repair">Electronics Repair</option>
+                                    <option value="Software Development">Software Development</option>
+                                    <option value="IT Support">IT Support & Maintenance</option>
+                                    <option value="Data Recovery">Data Recovery & Security</option>
+                                    <option value="Digital Solutions">Digital Solutions</option>
+                                    <option value="Smart Home Setup">Smart Home Setup</option>
+                                    <option value="Other">Other Services</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Project Details & Requirements *</label>
+                                <textarea id="message" name="message" class="form-input form-textarea" placeholder="Please describe your project requirements, timeline, location, and any specific equipment needs..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Send WhatsApp Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer (using global CSS) -->
+    <div id="footer"></div>
+
+    <script src="script.js"></script>
+    <script>
+        loadComponent("navbar", "navbar.html");
+        loadComponent("footer", "footer.html");
+    </script>
+
+    <script>
+        // Contact Form Handler
+        document.getElementById('techContactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value.trim(),
+                email: document.getElementById('email').value.trim(),
+                phone: document.getElementById('phone').value.trim(),
+                service: document.getElementById('service').value,
+                message: document.getElementById('message').value.trim()
+            };
+            
+            if (validateForm(formData)) {
+                const message = `💻 *TECH INQUIRY - PAVITRA'S TECH SOLUTIONS*
+
+Hi, I am *${formData.name}* and I need technology services.
+
+📋 *Service Details:*
+• Service Required: ${formData.service}
+• Email: ${formData.email}
+• Phone: ${formData.phone}
+
+📝 *Project Requirements:*
+${formData.message}
+
+📅 *Inquiry Date:* ${new Date().toLocaleDateString('en-IN')}
+⏰ *Time:* ${new Date().toLocaleTimeString('en-IN')}
+
+*Sent via Pavitra's Tech Solutions Website*
+*Part of Nirmal Enterprises Group*`;
+
+                sendWhatsApp(message);
+                this.reset();
+            }
+        });
+
+        // Form validation
+        function validateForm(data) {
+            let isValid = true;
+            
+            // Clear previous errors
+            document.querySelectorAll('.form-input').forEach(input => {
+                input.classList.remove('form-error');
+            });
+            
+            // Check required fields
+            Object.keys(data).forEach(key => {
+                if (!data[key]) {
+                    document.getElementById(key).classList.add('form-error');
+                    isValid = false;
+                }
+            });
+            
+            // Email validation
+            if (data.email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(data.email)) {
+                    document.getElementById('email').classList.add('form-error');
+                    isValid = false;
+                }
+            }
+            
+            // Phone validation
+            if (data.phone) {
+                const phoneRegex = /^(\+91|91)?[\s-]?[6-9]\d{9}$/;
+                if (!phoneRegex.test(data.phone.replace(/[\s-()]/g, ''))) {
+                    document.getElementById('phone').classList.add('form-error');
+                    isValid = false;
+                }
+            }
+            
+            if (!isValid) {
+                showMessage('Please fill in all required fields correctly.', 'error');
+            }
+            
+            return isValid;
+        }
+
+        // Send WhatsApp message
+        function sendWhatsApp(message) {
+            const whatsappNumber = '919870012090';
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+            
+            showMessage('Redirecting to WhatsApp...', 'success');
+            
+            setTimeout(() => {
+                window.open(whatsappUrl, '_blank');
+                document.querySelector('.success-message')?.remove();
+            }, 1500);
+        }
+
+                // Show success/error messages
+        function showMessage(message, type) {
+            // Remove any old message
+            document.querySelector('.success-message')?.remove();
+
+            const msgDiv = document.createElement('div');
+            msgDiv.classList.add('success-message');
+            msgDiv.textContent = message;
+
+            if (type === 'error') {
+                msgDiv.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
+            }
+
+            const form = document.getElementById('techContactForm');
+            form.parentNode.insertBefore(msgDiv, form);
+
+            // Auto remove success after 5s
+            if (type === 'success') {
+                setTimeout(() => {
+                    msgDiv.remove();
+                }, 5000);
+            }
+        }
+    </script>
+</body>
+</html>
