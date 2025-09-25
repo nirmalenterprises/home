@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="google-site-verification" content="YSgCZYhiOQMy4zAun6Q4GXeODOFyLIPs8cUArgeYfHY" />
     <meta name="google-site-verification" content="eIp96-2a99wfzOu8j3j4jj-_AxCA-pzaRjmGguC9khY" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pavitra's Tech Solutions | Electronics & Software Services | Navi Mumbai</title>
-    <meta name="description" content="Pavitra's Tech Solutions - Professional electronics repair, software development, and IT services in Navi Mumbai. Part of Nirmal Enterprises group.">
+    <title>Pavitra's Tech Solutions | Computer Hardware & Software Services | Navi Mumbai</title>
+    <meta name="description" content="Pavitra's Tech Solutions - Professional Computer Hardware repair, software development, and IT services in Navi Mumbai. Part of Nirmal Enterprises group.">
     
     <link rel="stylesheet" href="nav.css">
 
@@ -331,11 +332,69 @@
             margin-bottom: var(--space-2xl);
         }
 
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--space-2xl);
-        }
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    .form-input, .form-textarea, .form-select {
+    padding: var(--space-sm);
+    font-size: var(--font-size-base);
+}
+
+.contact-section {
+    padding: var(--space-lg);
+}
+
+.info-item {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-sm);
+}
+
+.info-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.contact-form h3 {
+    font-size: var(--font-size-xl);
+}
+
+.form-input, .form-textarea, .form-select {
+    font-size: var(--font-size-sm);
+}
+
+.info-item {
+    padding: var(--space-sm);
+}
+.form-input, input, .form-textarea, select {
+    width: 100% !important;
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: var(--space-sm) !important;
+    font-size: 16px !important;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: var(--space-md);
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 100%;
+    padding: var(--space-md);
+}
+
+}
+
 
         .contact-info h3 {
             color: var(--primary-blue);
@@ -665,7 +724,7 @@
                     </ul>
                 </div>
                 <div class="about-image">
-                   <img src="./Images/PTimg.jpg" alt="Pavitra's Tech Solutions">
+                   <img src="./Images/tec2.png" alt="Pavitra's Tech Solutions">
                 </div>
             </div>
         </div>
@@ -738,7 +797,7 @@
                                 <label for="service" class="form-label">Service Needed *</label>
                                 <select id="service" name="service" class="form-input form-select" required>
                                     <option value="">Select a service</option>
-                                    <option value="Electronics Repair">Electronics Repair</option>
+                                    <option value="Computer Repair">Computer Repair</option>
                                     <option value="Software Development">Software Development</option>
                                     <option value="IT Support">IT Support & Maintenance</option>
                                     <option value="Data Recovery">Data Recovery & Security</option>
