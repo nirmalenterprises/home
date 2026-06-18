@@ -7,7 +7,7 @@
 ## 🌐 Live Website
 
 **Visit Here:**
-[Nirmal Enterprises Website](https://nirmalenterprises.github.io/home/?utm_source=chatgpt.com)
+[Nirmal Enterprises Website](https://nirmalenterprises.github.io/home/)
 
 ---
 
