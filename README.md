@@ -13,7 +13,7 @@
 
 ## 📖 About The Project
 
-Nirmal Enterprises is a modern and responsive construction business website developed to showcase professional earthmoving, transportation, dumper rental, excavator services, and bulk material transport solutions. The website presents the company's services, project information, contact details, and business profile in a clean and user-friendly interface. It highlights Nirmal Enterprises as a trusted partner for contractors and infrastructure projects across the Mumbai–Konkan region. ([nirmalenterprises.github.io][1])
+Nirmal Enterprises is a modern and responsive construction business website developed to showcase professional earthmoving, transportation, dumper rental, excavator services, and bulk material transport solutions. The website presents the company's services, project information, contact details, and business profile in a clean and user-friendly interface. It highlights Nirmal Enterprises as a trusted partner for contractors and infrastructure projects across the Mumbai–Konkan region. (https://nirmalenterprises.github.io/home/)
 
 The platform is designed with a focus on performance, responsiveness, and accessibility, ensuring a seamless experience across desktop, tablet, and mobile devices.
 
@@ -55,7 +55,7 @@ Passionate Web Developer dedicated to creating professional, responsive, and use
 
 ### 👨‍💼 Pavitra Jana Paringe
 
-Owner of Nirmal Enterprises, providing reliable earthmoving, transportation, dumper rental, and construction support services. ([nirmalenterprises.github.io][1])
+Owner of Nirmal Enterprises, providing reliable earthmoving, transportation, dumper rental, and construction support services. (https://nirmalenterprises.github.io/home/)
 
 ---
 
@@ -69,4 +69,4 @@ For business inquiries, construction services, or project collaborations, please
 
 **© 2025 Nirmal Enterprises | Developed by Vipul Janardan Patil** 🚀
 
-[1]: https://nirmalenterprises.github.io/home/?utm_source=chatgpt.com "Nirmal Enterprises | Earthmoving & Transport Services Navi Mumbai"
+[1]: https://nirmalenterprises.github.io/home/ "Nirmal Enterprises | Earthmoving & Transport Services Navi Mumbai"
