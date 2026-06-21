@@ -45,7 +45,7 @@ The platform is designed with a focus on performance, responsiveness, and access
 
 **Created & Developed By**
 
-### 👨‍💻 Vipul Janardan Patil
+### 👨‍💻 Vipul Patil
 
 Passionate Web Developer dedicated to creating professional, responsive, and user-friendly web solutions.
 
